@@ -1,18 +1,6 @@
-var MongoClient = require('mongodb').MongoClient;
 var express = require('express');
 var app = express();
 var cons = require('consolidate');
-
-
-//mongodb connection ================================
-MongoClient.connect('mongodb://127.0.0.1:27017/test', function(err,db){
-  if (err) throw err;
-  db.collection('coll').findOne({}, function(err,doc){
-    if (err) throw err;
-    console.dir(doc);
-    db.close();
-  });
-});
 
 //express app basic routing ================================
 app.engine('html', cons.swig);
