@@ -1,4 +1,4 @@
-// //REPLACE -- THIS METHOD REPLACES EXISTING DOCUMENT WITH AN NEW DOCUMENT
+// //REPLACE -- THIS METHOD REPLACES EXISTING DOCUMENT WITH A NEW DOCUMENT
 // var MongoClient = require('mongodb').MongoClient
 //
 // MongoClient.connect('mongodb://localhost:27017/course', function(err,db){
